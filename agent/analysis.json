@@ -1,0 +1,1091 @@
+{
+ "fingerprint": "d154d981d76f6f9eeba291905b6bb8c8",
+ "metrics": {
+  "questions": 100,
+  "clusters": 10,
+  "silhouette": 0.129,
+  "category_accuracy": 0.59,
+  "difficulty_accuracy": 0.34,
+  "vocabulary": 3068,
+  "llm": false,
+  "llm_model": null
+ },
+ "summary": "Grading dominates with 20 questions (20%); Care is thinnest with 10 (10%). A model trained on the text predicts the category with 59% cross-validated accuracy. Most confusion: Pricing questions read like Grading (7 cases). Quality score 97/100: 4 questions flagged (1 category-mismatch, 3 difficulty-mismatch).",
+ "insights": [
+  {
+   "type": "coverage",
+   "title": "Category coverage",
+   "text": "Grading dominates with 20 questions (20%); Care is thinnest with 10 (10%).",
+   "severity": "info"
+  },
+  {
+   "type": "difficulty",
+   "title": "Difficulty mix",
+   "text": "Advanced 32%, Beginner 28%, Intermediate 40%. Most common: Intermediate.",
+   "severity": "info"
+  },
+  {
+   "type": "depth",
+   "title": "Answer depth",
+   "text": "Care answers are the most detailed (36 words avg); Grading answers are the shortest (29).",
+   "severity": "info"
+  },
+  {
+   "type": "model",
+   "title": "Category predictability",
+   "text": "A model trained on the text predicts the category with 59% cross-validated accuracy. Most confusion: Pricing questions read like Grading (7 cases).",
+   "severity": "warn"
+  },
+  {
+   "type": "topics",
+   "title": "Largest topic cluster",
+   "text": "\u201cnatural \u00b7 light \u00b7 carbon\u201d covers 15 questions (mostly Science, 60% pure).",
+   "severity": "info"
+  },
+  {
+   "type": "topics",
+   "title": "Cross-category theme",
+   "text": "\u201cpink \u00b7 value \u00b7 botswana\u201d spans several categories \u2014 a theme that could become its own category.",
+   "severity": "info"
+  },
+  {
+   "type": "quality",
+   "title": "Data quality",
+   "text": "Quality score 97/100: 4 questions flagged (1 category-mismatch, 3 difficulty-mismatch).",
+   "severity": "good"
+  }
+ ],
+ "audit": {
+  "quality_score": 97,
+  "flagged_questions": 4,
+  "total_issues": 4,
+  "by_type": {
+   "category-mismatch": 1,
+   "difficulty-mismatch": 3
+  },
+  "issues": [
+   {
+    "id": 32,
+    "question": "What is the Pink Star diamond?",
+    "category": "History",
+    "type": "category-mismatch",
+    "severity": "low",
+    "detail": "Labelled History, but the model predicts Pricing (40% confidence).",
+    "suggestion": "Review whether 'Pricing' is the better category."
+   },
+   {
+    "id": 2,
+    "question": "What is the highest color grade for a diamond?",
+    "category": "Grading",
+    "type": "difficulty-mismatch",
+    "severity": "low",
+    "detail": "Labelled Beginner, but the model predicts Intermediate (60% confidence).",
+    "suggestion": "Review whether 'Intermediate' is the better difficulty."
+   },
+   {
+    "id": 26,
+    "question": "What is the Cullinan Diamond?",
+    "category": "History",
+    "type": "difficulty-mismatch",
+    "severity": "low",
+    "detail": "Labelled Advanced, but the model predicts Intermediate (62% confidence).",
+    "suggestion": "Review whether 'Intermediate' is the better difficulty."
+   },
+   {
+    "id": 69,
+    "question": "What metals are most commonly used in diamond jewelry?",
+    "category": "Jewelry",
+    "type": "difficulty-mismatch",
+    "severity": "low",
+    "detail": "Labelled Beginner, but the model predicts Intermediate (62% confidence).",
+    "suggestion": "Review whether 'Intermediate' is the better difficulty."
+   }
+  ]
+ },
+ "clusters": [
+  {
+   "id": 3,
+   "name": "natural \u00b7 light \u00b7 carbon",
+   "keywords": [
+    "natural",
+    "light",
+    "carbon",
+    "atoms",
+    "nitrogen",
+    "blue",
+    "carbon atoms",
+    "store"
+   ],
+   "size": 15,
+   "dominant_category": "Science",
+   "purity": 0.6,
+   "examples": [
+    "What is fluorescence in diamonds and how is it graded?",
+    "What is the Koh-i-Noor diamond and where is it now?",
+    "What is the Hope Diamond and what is its alleged curse?"
+   ]
+  },
+  {
+   "id": 8,
+   "name": "carat \u00b7 price \u00b7 weight",
+   "keywords": [
+    "carat",
+    "price",
+    "weight",
+    "quality",
+    "carat weight",
+    "color",
+    "clarity",
+    "pricing"
+   ],
+   "size": 14,
+   "dominant_category": "Pricing",
+   "purity": 0.57,
+   "examples": [
+    "What are the 4 Cs of diamond grading?",
+    "What is a diamond carat?",
+    "What is the difference between carat and karat?"
+   ]
+  },
+  {
+   "id": 2,
+   "name": "setting \u00b7 metal \u00b7 gold",
+   "keywords": [
+    "setting",
+    "metal",
+    "gold",
+    "prongs",
+    "rhodium",
+    "settings",
+    "white",
+    "surface"
+   ],
+   "size": 13,
+   "dominant_category": "Care",
+   "purity": 0.54,
+   "examples": [
+    "What is a 'pav\u00e9' diamond setting?",
+    "What metals are most commonly used in diamond jewelry?",
+    "What is a 'bezel' setting?"
+   ]
+  },
+  {
+   "id": 4,
+   "name": "pink \u00b7 value \u00b7 botswana",
+   "keywords": [
+    "pink",
+    "value",
+    "botswana",
+    "world",
+    "largest",
+    "million",
+    "century",
+    "fancy"
+   ],
+   "size": 13,
+   "dominant_category": "Mining",
+   "purity": 0.46,
+   "examples": [
+    "Where were diamonds first discovered?",
+    "What company popularized the slogan 'A Diamond is Forever'?",
+    "What is the Pink Star diamond?"
+   ]
+  },
+  {
+   "id": 0,
+   "name": "cut \u00b7 gia \u00b7 grading",
+   "keywords": [
+    "cut",
+    "gia",
+    "grading",
+    "grade",
+    "excellent",
+    "round",
+    "gia cut",
+    "ags"
+   ],
+   "size": 9,
+   "dominant_category": "Grading",
+   "purity": 0.67,
+   "examples": [
+    "What is the highest color grade for a diamond?",
+    "Who is the leading authority in diamond grading?",
+    "What is a 'triple excellent' diamond?"
+   ]
+  },
+  {
+   "id": 1,
+   "name": "ring \u00b7 engagement \u00b7 engagement ring",
+   "keywords": [
+    "ring",
+    "engagement",
+    "engagement ring",
+    "features",
+    "ring features",
+    "band",
+    "stone",
+    "center"
+   ],
+   "size": 9,
+   "dominant_category": "Jewelry",
+   "purity": 0.67,
+   "examples": [
+    "What was the first recorded diamond engagement ring?",
+    "What is the average cost of a 1-carat diamond engagement ring?",
+    "What is a 'solitaire' engagement ring?"
+   ]
+  },
+  {
+   "id": 9,
+   "name": "south africa \u00b7 south \u00b7 africa",
+   "keywords": [
+    "south africa",
+    "south",
+    "africa",
+    "kimberley",
+    "discovered",
+    "conflict",
+    "kimberley process",
+    "process"
+   ],
+   "size": 8,
+   "dominant_category": "History",
+   "purity": 0.62,
+   "examples": [
+    "When were diamonds first discovered in South Africa?",
+    "What is the Cullinan Diamond?",
+    "When did Brazil become a major diamond source?"
+   ]
+  },
+  {
+   "id": 5,
+   "name": "inclusion \u00b7 visible \u00b7 inclusions",
+   "keywords": [
+    "inclusion",
+    "visible",
+    "inclusions",
+    "clarity",
+    "magnification",
+    "10x magnification",
+    "10x",
+    "pinpoint"
+   ],
+   "size": 7,
+   "dominant_category": "Grading",
+   "purity": 0.86,
+   "examples": [
+    "What does 'FL' mean in diamond clarity grading?",
+    "What clarity grade is considered 'eye-clean'?",
+    "What is a 'feather' in diamond clarity terminology?"
+   ]
+  },
+  {
+   "id": 6,
+   "name": "kimberlite \u00b7 earth \u00b7 pipe",
+   "keywords": [
+    "kimberlite",
+    "earth",
+    "pipe",
+    "mantle",
+    "form",
+    "alluvial",
+    "volcanic",
+    "surface"
+   ],
+   "size": 6,
+   "dominant_category": "Mining",
+   "purity": 0.83,
+   "examples": [
+    "How deep underground do diamonds form?",
+    "What is a kimberlite pipe?",
+    "What is alluvial diamond mining?"
+   ]
+  },
+  {
+   "id": 7,
+   "name": "culet \u00b7 percentage \u00b7 girdle",
+   "keywords": [
+    "culet",
+    "percentage",
+    "girdle",
+    "round",
+    "facet",
+    "table",
+    "popular",
+    "shapes"
+   ],
+   "size": 6,
+   "dominant_category": "Grading",
+   "purity": 0.67,
+   "examples": [
+    "What does 'depth percentage' mean in a diamond grading report?",
+    "What is 'table percentage' in diamond grading?",
+    "What is the 'girdle' on a diamond?"
+   ]
+  }
+ ],
+ "keywords": [
+  {
+   "term": "carat",
+   "score": 1.95
+  },
+  {
+   "term": "ring",
+   "score": 1.71
+  },
+  {
+   "term": "cut",
+   "score": 1.69
+  },
+  {
+   "term": "price",
+   "score": 1.51
+  },
+  {
+   "term": "light",
+   "score": 1.39
+  },
+  {
+   "term": "setting",
+   "score": 1.39
+  },
+  {
+   "term": "color",
+   "score": 1.38
+  },
+  {
+   "term": "quality",
+   "score": 1.35
+  },
+  {
+   "term": "gia",
+   "score": 1.35
+  },
+  {
+   "term": "clarity",
+   "score": 1.33
+  },
+  {
+   "term": "grading",
+   "score": 1.22
+  },
+  {
+   "term": "value",
+   "score": 1.17
+  },
+  {
+   "term": "natural",
+   "score": 1.15
+  },
+  {
+   "term": "round",
+   "score": 1.1
+  },
+  {
+   "term": "grade",
+   "score": 1.09
+  }
+ ],
+ "scatter": [
+  {
+   "x": 0.386,
+   "y": -0.125,
+   "cluster": 8,
+   "category": "Grading",
+   "q": "What are the 4 Cs of diamond grading?"
+  },
+  {
+   "x": 0.224,
+   "y": -0.069,
+   "cluster": 0,
+   "category": "Grading",
+   "q": "What is the highest color grade for a diamond?"
+  },
+  {
+   "x": 0.201,
+   "y": -0.032,
+   "cluster": 5,
+   "category": "Grading",
+   "q": "What does 'FL' mean in diamond clarity grading?"
+  },
+  {
+   "x": 0.175,
+   "y": -0.041,
+   "cluster": 5,
+   "category": "Grading",
+   "q": "What clarity grade is considered 'eye-clean'?"
+  },
+  {
+   "x": 0.127,
+   "y": -0.05,
+   "cluster": 0,
+   "category": "Grading",
+   "q": "Who is the leading authority in diamond grading?"
+  },
+  {
+   "x": 0.252,
+   "y": -0.011,
+   "cluster": 0,
+   "category": "Grading",
+   "q": "What is a 'triple excellent' diamond?"
+  },
+  {
+   "x": 0.321,
+   "y": -0.032,
+   "cluster": 0,
+   "category": "Grading",
+   "q": "What are the five GIA cut grades?"
+  },
+  {
+   "x": 0.079,
+   "y": 0.027,
+   "cluster": 5,
+   "category": "Grading",
+   "q": "What is a 'feather' in diamond clarity terminology?"
+  },
+  {
+   "x": 0.127,
+   "y": -0.011,
+   "cluster": 5,
+   "category": "Grading",
+   "q": "What does 'SI2' clarity mean?"
+  },
+  {
+   "x": 0.168,
+   "y": -0.048,
+   "cluster": 3,
+   "category": "Grading",
+   "q": "What is fluorescence in diamonds and how is it graded?"
+  },
+  {
+   "x": 0.116,
+   "y": -0.034,
+   "cluster": 8,
+   "category": "Grading",
+   "q": "What is a diamond carat?"
+  },
+  {
+   "x": 0.12,
+   "y": 0.003,
+   "cluster": 8,
+   "category": "Grading",
+   "q": "What is the difference between carat and karat?"
+  },
+  {
+   "x": 0.099,
+   "y": 0.063,
+   "cluster": 5,
+   "category": "Grading",
+   "q": "What is a 'cloud' inclusion in a diamond?"
+  },
+  {
+   "x": 0.237,
+   "y": -0.076,
+   "cluster": 0,
+   "category": "Grading",
+   "q": "What is the AGS grading system?"
+  },
+  {
+   "x": 0.175,
+   "y": -0.051,
+   "cluster": 7,
+   "category": "Grading",
+   "q": "What does 'depth percentage' mean in a diamond grading report?"
+  },
+  {
+   "x": 0.193,
+   "y": -0.076,
+   "cluster": 0,
+   "category": "Grading",
+   "q": "What is a diamond grading report?"
+  },
+  {
+   "x": 0.176,
+   "y": -0.021,
+   "cluster": 7,
+   "category": "Grading",
+   "q": "What is 'table percentage' in diamond grading?"
+  },
+  {
+   "x": 0.073,
+   "y": 0.072,
+   "cluster": 5,
+   "category": "Grading",
+   "q": "What is a 'pinpoint' diamond inclusion?"
+  },
+  {
+   "x": 0.039,
+   "y": 0.022,
+   "cluster": 7,
+   "category": "Grading",
+   "q": "What is the 'girdle' on a diamond?"
+  },
+  {
+   "x": 0.047,
+   "y": 0.019,
+   "cluster": 7,
+   "category": "Grading",
+   "q": "What is a 'culet' on a diamond?"
+  },
+  {
+   "x": 0.067,
+   "y": -0.081,
+   "cluster": 4,
+   "category": "History",
+   "q": "Where were diamonds first discovered?"
+  },
+  {
+   "x": 0.092,
+   "y": -0.059,
+   "cluster": 3,
+   "category": "History",
+   "q": "What is the Koh-i-Noor diamond and where is it now?"
+  },
+  {
+   "x": 0.105,
+   "y": -0.175,
+   "cluster": 9,
+   "category": "History",
+   "q": "When were diamonds first discovered in South Africa?"
+  },
+  {
+   "x": 0.058,
+   "y": -0.034,
+   "cluster": 3,
+   "category": "History",
+   "q": "What is the Hope Diamond and what is its alleged curse?"
+  },
+  {
+   "x": 0.022,
+   "y": -0.028,
+   "cluster": 4,
+   "category": "History",
+   "q": "What company popularized the slogan 'A Diamond is Forever'?"
+  },
+  {
+   "x": 0.213,
+   "y": -0.223,
+   "cluster": 9,
+   "category": "History",
+   "q": "What is the Cullinan Diamond?"
+  },
+  {
+   "x": 0.066,
+   "y": -0.124,
+   "cluster": 9,
+   "category": "History",
+   "q": "When did Brazil become a major diamond source?"
+  },
+  {
+   "x": 0.111,
+   "y": -0.04,
+   "cluster": 8,
+   "category": "History",
+   "q": "What is the Regent Diamond?"
+  },
+  {
+   "x": 0.165,
+   "y": 0.019,
+   "cluster": 0,
+   "category": "History",
+   "q": "Who invented the modern round brilliant cut diamond?"
+  },
+  {
+   "x": 0.054,
+   "y": -0.093,
+   "cluster": 9,
+   "category": "History",
+   "q": "What was the significance of the 1870 Kimberley diamond rush?"
+  },
+  {
+   "x": 0.089,
+   "y": 0.308,
+   "cluster": 1,
+   "category": "History",
+   "q": "What was the first recorded diamond engagement ring?"
+  },
+  {
+   "x": 0.203,
+   "y": -0.173,
+   "cluster": 4,
+   "category": "History",
+   "q": "What is the Pink Star diamond?"
+  },
+  {
+   "x": 0.031,
+   "y": -0.035,
+   "cluster": 4,
+   "category": "History",
+   "q": "Which ancient civilization first valued diamonds?"
+  },
+  {
+   "x": 0.091,
+   "y": -0.061,
+   "cluster": 8,
+   "category": "History",
+   "q": "What is the Taylor-Burton Diamond?"
+  },
+  {
+   "x": 0.183,
+   "y": -0.212,
+   "cluster": 9,
+   "category": "History",
+   "q": "What is the significance of the Jonker Diamond?"
+  },
+  {
+   "x": 0.357,
+   "y": -0.051,
+   "cluster": 8,
+   "category": "Pricing",
+   "q": "What factor most influences diamond price?"
+  },
+  {
+   "x": 0.063,
+   "y": -0.013,
+   "cluster": 8,
+   "category": "Pricing",
+   "q": "What is the Rapaport Price List?"
+  },
+  {
+   "x": 0.232,
+   "y": -0.13,
+   "cluster": 8,
+   "category": "Pricing",
+   "q": "Why do diamond prices increase exponentially with carat weight?"
+  },
+  {
+   "x": 0.147,
+   "y": -0.034,
+   "cluster": 8,
+   "category": "Pricing",
+   "q": "What are 'magic sizes' in diamond pricing?"
+  },
+  {
+   "x": 0.133,
+   "y": -0.056,
+   "cluster": 4,
+   "category": "Pricing",
+   "q": "Do diamonds hold their value over time?"
+  },
+  {
+   "x": 0.233,
+   "y": -0.079,
+   "cluster": 8,
+   "category": "Pricing",
+   "q": "What is 'per carat' pricing in the diamond trade?"
+  },
+  {
+   "x": 0.244,
+   "y": -0.095,
+   "cluster": 8,
+   "category": "Pricing",
+   "q": "How does color grade affect diamond price?"
+  },
+  {
+   "x": 0.068,
+   "y": -0.042,
+   "cluster": 4,
+   "category": "Pricing",
+   "q": "What are fancy colored diamonds and why are they expensive?"
+  },
+  {
+   "x": 0.165,
+   "y": -0.151,
+   "cluster": 4,
+   "category": "Pricing",
+   "q": "What is the most expensive diamond ever sold at auction?"
+  },
+  {
+   "x": 0.137,
+   "y": -0.065,
+   "cluster": 3,
+   "category": "Pricing",
+   "q": "Are lab-grown diamonds cheaper than natural diamonds?"
+  },
+  {
+   "x": 0.141,
+   "y": -0.056,
+   "cluster": 0,
+   "category": "Pricing",
+   "q": "What is the 'certificate premium' for GIA-graded diamonds?"
+  },
+  {
+   "x": 0.244,
+   "y": -0.058,
+   "cluster": 8,
+   "category": "Pricing",
+   "q": "How does clarity affect price between VS and SI grades?"
+  },
+  {
+   "x": 0.222,
+   "y": -0.073,
+   "cluster": 8,
+   "category": "Pricing",
+   "q": "What is the effect of fluorescence on diamond price?"
+  },
+  {
+   "x": 0.285,
+   "y": 0.183,
+   "cluster": 1,
+   "category": "Pricing",
+   "q": "What is the average cost of a 1-carat diamond engagement ring?"
+  },
+  {
+   "x": 0.351,
+   "y": -0.043,
+   "cluster": 0,
+   "category": "Pricing",
+   "q": "How is diamond price affected by cut quality?"
+  },
+  {
+   "x": 0.058,
+   "y": -0.129,
+   "cluster": 9,
+   "category": "Mining",
+   "q": "In what type of rock are diamonds primarily found?"
+  },
+  {
+   "x": 0.039,
+   "y": -0.037,
+   "cluster": 4,
+   "category": "Mining",
+   "q": "What are the top diamond-producing countries?"
+  },
+  {
+   "x": 0.047,
+   "y": -0.034,
+   "cluster": 6,
+   "category": "Mining",
+   "q": "How deep underground do diamonds form?"
+  },
+  {
+   "x": 0.236,
+   "y": -0.144,
+   "cluster": 8,
+   "category": "Mining",
+   "q": "What percentage of mined diamonds are gem quality?"
+  },
+  {
+   "x": 0.034,
+   "y": -0.047,
+   "cluster": 6,
+   "category": "Mining",
+   "q": "What is a kimberlite pipe?"
+  },
+  {
+   "x": 0.023,
+   "y": -0.048,
+   "cluster": 6,
+   "category": "Mining",
+   "q": "What is alluvial diamond mining?"
+  },
+  {
+   "x": 0.111,
+   "y": -0.082,
+   "cluster": 4,
+   "category": "Mining",
+   "q": "What is the Jwaneng mine and why is it significant?"
+  },
+  {
+   "x": 0.007,
+   "y": 0.002,
+   "cluster": 9,
+   "category": "Mining",
+   "q": "What is a 'blood diamond' or 'conflict diamond'?"
+  },
+  {
+   "x": 0.039,
+   "y": -0.031,
+   "cluster": 6,
+   "category": "Mining",
+   "q": "How long does it take for a diamond to form naturally?"
+  },
+  {
+   "x": 0.005,
+   "y": 0.002,
+   "cluster": 9,
+   "category": "Mining",
+   "q": "What is the Kimberley Process?"
+  },
+  {
+   "x": 0.08,
+   "y": -0.08,
+   "cluster": 4,
+   "category": "Mining",
+   "q": "What was the Argyle mine known for?"
+  },
+  {
+   "x": 0.067,
+   "y": -0.075,
+   "cluster": 4,
+   "category": "Mining",
+   "q": "What is ALROSA?"
+  },
+  {
+   "x": 0.069,
+   "y": -0.054,
+   "cluster": 6,
+   "category": "Mining",
+   "q": "What are 'pipe diamonds' versus 'alluvial diamonds'?"
+  },
+  {
+   "x": 0.087,
+   "y": -0.094,
+   "cluster": 4,
+   "category": "Mining",
+   "q": "What country produces the most diamonds in Africa?"
+  },
+  {
+   "x": 0.107,
+   "y": -0.061,
+   "cluster": 4,
+   "category": "Mining",
+   "q": "How are diamonds sorted and valued after mining?"
+  },
+  {
+   "x": 0.198,
+   "y": 0.24,
+   "cluster": 7,
+   "category": "Jewelry",
+   "q": "What are the most popular diamond shapes for engagement rings?"
+  },
+  {
+   "x": 0.176,
+   "y": 0.486,
+   "cluster": 1,
+   "category": "Jewelry",
+   "q": "What is a 'solitaire' engagement ring?"
+  },
+  {
+   "x": 0.103,
+   "y": 0.242,
+   "cluster": 2,
+   "category": "Jewelry",
+   "q": "What is a 'pav\u00e9' diamond setting?"
+  },
+  {
+   "x": 0.083,
+   "y": 0.126,
+   "cluster": 2,
+   "category": "Jewelry",
+   "q": "What metals are most commonly used in diamond jewelry?"
+  },
+  {
+   "x": 0.099,
+   "y": 0.127,
+   "cluster": 2,
+   "category": "Jewelry",
+   "q": "What is a 'bezel' setting?"
+  },
+  {
+   "x": 0.168,
+   "y": 0.41,
+   "cluster": 1,
+   "category": "Jewelry",
+   "q": "What is a 'halo' engagement ring?"
+  },
+  {
+   "x": 0.018,
+   "y": 0.052,
+   "cluster": 5,
+   "category": "Jewelry",
+   "q": "What is a 'tennis bracelet'?"
+  },
+  {
+   "x": 0.103,
+   "y": 0.275,
+   "cluster": 1,
+   "category": "Jewelry",
+   "q": "What is a 'cathedral' engagement ring setting?"
+  },
+  {
+   "x": 0.146,
+   "y": 0.149,
+   "cluster": 2,
+   "category": "Jewelry",
+   "q": "What is the difference between 14k and 18k gold for diamond settings?"
+  },
+  {
+   "x": 0.09,
+   "y": 0.132,
+   "cluster": 2,
+   "category": "Jewelry",
+   "q": "What is a 'channel' setting?"
+  },
+  {
+   "x": 0.048,
+   "y": 0.193,
+   "cluster": 1,
+   "category": "Jewelry",
+   "q": "What is a diamond eternity band?"
+  },
+  {
+   "x": 0.151,
+   "y": 0.144,
+   "cluster": 7,
+   "category": "Jewelry",
+   "q": "What are the most popular diamond cuts besides round brilliant?"
+  },
+  {
+   "x": 0.079,
+   "y": 0.268,
+   "cluster": 1,
+   "category": "Jewelry",
+   "q": "What is a 'toi et moi' ring?"
+  },
+  {
+   "x": 0.152,
+   "y": 0.244,
+   "cluster": 2,
+   "category": "Jewelry",
+   "q": "What is a prong setting?"
+  },
+  {
+   "x": 0.124,
+   "y": 0.378,
+   "cluster": 1,
+   "category": "Jewelry",
+   "q": "What is a 'three-stone' or 'trilogy' diamond ring?"
+  },
+  {
+   "x": 0.015,
+   "y": 0.035,
+   "cluster": 3,
+   "category": "Science",
+   "q": "What is the chemical composition of a diamond?"
+  },
+  {
+   "x": 0.047,
+   "y": -0.02,
+   "cluster": 3,
+   "category": "Science",
+   "q": "What makes diamonds the hardest natural material?"
+  },
+  {
+   "x": 0.031,
+   "y": -0.034,
+   "cluster": 3,
+   "category": "Science",
+   "q": "What are 'Type I' and 'Type II' diamonds?"
+  },
+  {
+   "x": 0.084,
+   "y": 0.05,
+   "cluster": 3,
+   "category": "Science",
+   "q": "What is the refractive index of diamond?"
+  },
+  {
+   "x": 0.074,
+   "y": 0.049,
+   "cluster": 3,
+   "category": "Science",
+   "q": "What is 'fire' in a diamond?"
+  },
+  {
+   "x": 0.017,
+   "y": 0.051,
+   "cluster": 3,
+   "category": "Science",
+   "q": "Can diamonds burn?"
+  },
+  {
+   "x": 0.107,
+   "y": 0.045,
+   "cluster": 3,
+   "category": "Science",
+   "q": "What is 'scintillation' in a diamond?"
+  },
+  {
+   "x": 0.043,
+   "y": -0.025,
+   "cluster": 3,
+   "category": "Science",
+   "q": "How do lab-grown diamonds differ from natural diamonds at the atomic level?"
+  },
+  {
+   "x": 0.015,
+   "y": -0.004,
+   "cluster": 6,
+   "category": "Science",
+   "q": "What are CVD and HPHT methods of growing diamonds?"
+  },
+  {
+   "x": 0.084,
+   "y": 0.002,
+   "cluster": 3,
+   "category": "Science",
+   "q": "What is the significance of nitrogen in diamond coloration?"
+  },
+  {
+   "x": 0.079,
+   "y": 0.112,
+   "cluster": 1,
+   "category": "Care",
+   "q": "How should you clean a diamond ring at home?"
+  },
+  {
+   "x": 0.042,
+   "y": 0.005,
+   "cluster": 3,
+   "category": "Care",
+   "q": "Can diamonds scratch other diamonds?"
+  },
+  {
+   "x": 0.062,
+   "y": 0.069,
+   "cluster": 2,
+   "category": "Care",
+   "q": "What chemicals should you avoid exposing diamonds to?"
+  },
+  {
+   "x": 0.035,
+   "y": 0.045,
+   "cluster": 2,
+   "category": "Care",
+   "q": "How often should diamond jewelry be professionally cleaned?"
+  },
+  {
+   "x": 0.03,
+   "y": 0.041,
+   "cluster": 2,
+   "category": "Care",
+   "q": "What is an ultrasonic cleaner and is it safe for all diamonds?"
+  },
+  {
+   "x": 0.101,
+   "y": 0.168,
+   "cluster": 2,
+   "category": "Care",
+   "q": "Should you remove your diamond ring when exercising?"
+  },
+  {
+   "x": 0.034,
+   "y": 0.027,
+   "cluster": 3,
+   "category": "Care",
+   "q": "How should you store diamond jewelry properly?"
+  },
+  {
+   "x": 0.07,
+   "y": 0.071,
+   "cluster": 2,
+   "category": "Care",
+   "q": "What is 'diamond dipping' or rhodium replating?"
+  },
+  {
+   "x": 0.085,
+   "y": 0.135,
+   "cluster": 2,
+   "category": "Care",
+   "q": "Can hand sanitizer damage a diamond ring?"
+  },
+  {
+   "x": 0.087,
+   "y": 0.053,
+   "cluster": 2,
+   "category": "Care",
+   "q": "Why does a diamond look cloudy or dull sometimes?"
+  }
+ ]
+}
