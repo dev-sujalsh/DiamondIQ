@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>💎 DiamondIQ — Diamond Knowledge Dashboard</title>
+  <meta name="description" content="Explore 100+ expert diamond questions across grading, history, pricing, mining, jewelry, science, and care. The ultimate diamond knowledge dashboard." />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     LOADING SCREEN (shown while diamonds.json is being fetched)
+════════════════════════════════════════════════════════════════════════════ -->
+<div id="loading-screen" style="
+  position:fixed;inset:0;z-index:9999;
+  background:var(--bg-primary);
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:20px">
+
+  <div style="
+    width:64px;height:64px;
+    background:var(--grad-primary);
+    clip-path:polygon(50% 0%,100% 38%,82% 100%,18% 100%,0% 38%);
+    animation:rotateDiamond 2s linear infinite">
+  </div>
+
+  <div style="font-size:22px;font-weight:800;background:var(--grad-primary);
+              -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">
+    DiamondIQ
+  </div>
+
+  <div style="display:flex;align-items:center;gap:10px;color:var(--text-secondary);font-size:14px">
+    <div class="live-dot"></div>
+    Loading dataset from diamonds.json…
+  </div>
+
+  <!-- Spinner bar -->
+  <div style="width:200px;height:3px;background:rgba(255,255,255,0.08);border-radius:2px;overflow:hidden">
+    <div style="height:100%;background:var(--grad-primary);border-radius:2px;
+                animation:loadBar 1.4s ease-in-out infinite"></div>
+  </div>
+
+  <div id="loading-error"></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     AUTH PAGE
+════════════════════════════════════════════════════════════════════════════ -->
+<div id="auth-page" class="hidden">
+  <!-- Animated floating diamonds -->
+  <div class="diamond-bg">
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+  </div>
+
+  <div class="auth-card">
+    <div class="auth-logo">
+      <div class="auth-logo-icon">💎</div>
+      <div class="auth-logo-text">DiamondIQ</div>
+    </div>
+    <div class="auth-subtitle">The Gemstone Intelligence Platform</div>
+
+    <!-- Tabs -->
+    <div class="auth-tabs">
+      <button class="auth-tab active" data-mode="login"    id="tab-login">Sign In</button>
+      <button class="auth-tab"        data-mode="register" id="tab-register">Create Account</button>
+    </div>
+
+    <!-- Login Form -->
+    <div id="login-form">
+      <div class="form-group">
+        <label class="form-label" for="login-email">Email Address</label>
+        <input class="form-input" type="email" id="login-email"
+               placeholder="you@example.com" autocomplete="email" />
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="login-password">Password</label>
+        <input class="form-input" type="password" id="login-password"
+               placeholder="Enter your password" autocomplete="current-password" />
+      </div>
+      <div class="error-msg" id="login-error"></div>
+      <button class="btn-primary" id="login-btn">Sign In to Dashboard →</button>
+      <div class="demo-hint">
+        <strong>✦ Demo Account</strong> — Use the credentials below or
+        <button id="demo-fill-btn" style="background:none;border:none;color:var(--accent-cyan);
+                cursor:pointer;font-size:13px;text-decoration:underline;font-family:Inter,sans-serif">
+          click to auto-fill
+        </button><br/>
+        <strong>Email:</strong> admin@diamond.com &nbsp;|&nbsp; <strong>Password:</strong> diamond123
+      </div>
+    </div>
+
+    <!-- Register Form -->
+    <div id="register-form" class="hidden">
+      <div class="form-group">
+        <label class="form-label" for="reg-name">Display Name</label>
+        <input class="form-input" type="text" id="reg-name"
+               placeholder="Your name" autocomplete="name" />
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="reg-email">Email Address</label>
+        <input class="form-input" type="email" id="reg-email"
+               placeholder="you@example.com" autocomplete="email" />
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="reg-password">Password</label>
+        <input class="form-input" type="password" id="reg-password"
+               placeholder="Minimum 6 characters" autocomplete="new-password" />
+      </div>
+      <div class="error-msg" id="reg-error"></div>
+      <button class="btn-primary" id="register-btn">Create Account →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     MAIN APP (shown after login)
+════════════════════════════════════════════════════════════════════════════ -->
+<div id="app" class="hidden">
+
+  <!-- ── Sidebar ──────────────────────────────────────────────────────────── -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-logo">
+      <div class="sidebar-logo-icon"></div>
+      <div class="sidebar-logo-text">DiamondIQ</div>
+    </div>
+
+    <nav class="sidebar-nav">
+      <div class="nav-section-title">Main</div>
+      <div class="nav-item active" data-page="dashboard" id="nav-dashboard">
+        <span class="nav-icon">📊</span>
+        <span>Dashboard</span>
+      </div>
+      <div class="nav-item" data-page="explorer" id="nav-explorer">
+        <span class="nav-icon">🔍</span>
+        <span>Q&amp;A Explorer</span>
+        <span class="nav-badge" id="total-q-badge">100</span>
+      </div>
+
+      <div class="nav-item" data-page="agent" id="nav-agent">
+        <span class="nav-icon">🤖</span>
+        <span>AI Agent</span>
+      </div>
+
+      <div class="nav-section-title">Contribute</div>
+      <div class="nav-item" data-page="add" id="nav-add">
+        <span class="nav-icon">➕</span>
+        <span>Add Question</span>
+      </div>
+
+      <div class="nav-section-title">Account</div>
+      <div class="nav-item" data-page="profile" id="nav-profile">
+        <span class="nav-icon">👤</span>
+        <span>My Profile</span>
+      </div>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="user-card">
+        <div class="user-avatar" id="sidebar-avatar">AD</div>
+        <div class="user-info">
+          <div class="user-name" id="sidebar-username">Admin</div>
+          <div class="user-role" id="sidebar-role">Admin</div>
+        </div>
+        <button class="logout-btn" id="logout-btn" title="Sign out">⏻</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ── Main Content ──────────────────────────────────────────────────────── -->
+  <div class="main-content">
+
+    <!-- Top Bar -->
+    <header class="topbar">
+      <div class="topbar-title" id="topbar-title">💎 Diamond <span>Dashboard</span></div>
+      <div class="topbar-actions">
+        <div class="search-bar">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="topbar-search" placeholder="Search questions…" />
+        </div>
+        <div class="live-badge">
+          <div class="live-dot"></div>
+          Live
+        </div>
+      </div>
+    </header>
+
+    <!-- Dynamic Page Content -->
+    <main class="page-area" id="page-content"></main>
+
+  </div>
+</div>
+
+<!-- ── Toast Notification ──────────────────────────────────────────────────── -->
+<div class="success-toast" id="success-toast">
+  <span class="toast-icon">✅</span>
+  <span class="toast-msg">Question added successfully!</span>
+</div>
+
+<!-- ── Scripts ─────────────────────────────────────────────────────────────── -->
+<!-- diamonds-data.js: inline JSON fallback for file:// (no server) mode     -->
+<script src="config.js"></script>
+<script src="diamonds-data.js"></script>
+<!-- app.js: tries fetch() first, falls back to window.__DIAMOND_JSON__       -->
+<script src="charts-extra.js"></script>
+<script src="app.js"></script>
+<script src="agent-ui.js"></script>
+
+</body>
+</html>

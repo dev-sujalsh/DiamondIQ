@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: diamondiq
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn --chdir agent server:app --bind 0.0.0.0:$PORT --workers 1 --timeout 120
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.3
+      # Optional: add ANTHROPIC_API_KEY in the Render dashboard to enable Claude summaries and chat answers

@@ -1,0 +1,711 @@
+{
+  "metadata": {
+    "title": "Diamond Knowledge Dataset",
+    "version": "1.0",
+    "totalQuestions": 100,
+    "categories": ["Grading", "History", "Pricing", "Mining", "Jewelry", "Science", "Care"],
+    "source": "DiamondIQ Platform"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "category": "Grading",
+      "difficulty": "Beginner",
+      "question": "What are the 4 Cs of diamond grading?",
+      "answer": "The 4 Cs are Cut, Color, Clarity, and Carat weight. These four characteristics determine a diamond's quality and value and were standardized by the GIA."
+    },
+    {
+      "id": 2,
+      "category": "Grading",
+      "difficulty": "Beginner",
+      "question": "What is the highest color grade for a diamond?",
+      "answer": "D is the highest color grade, representing a completely colorless diamond. The GIA color scale runs from D (colorless) to Z (light yellow or brown)."
+    },
+    {
+      "id": 3,
+      "category": "Grading",
+      "difficulty": "Intermediate",
+      "question": "What does 'FL' mean in diamond clarity grading?",
+      "answer": "FL stands for Flawless — no inclusions or blemishes are visible under 10x magnification. It is the rarest and most valuable clarity grade on the GIA scale."
+    },
+    {
+      "id": 4,
+      "category": "Grading",
+      "difficulty": "Intermediate",
+      "question": "What clarity grade is considered 'eye-clean'?",
+      "answer": "VS1 and VS2 (Very Slightly Included) and SI1 grades are generally considered eye-clean, meaning inclusions are not visible to the naked eye under normal viewing conditions."
+    },
+    {
+      "id": 5,
+      "category": "Grading",
+      "difficulty": "Beginner",
+      "question": "Who is the leading authority in diamond grading?",
+      "answer": "The Gemological Institute of America (GIA) is the world's foremost authority in gemology, known for developing the International Diamond Grading System and the 4 Cs concept."
+    },
+    {
+      "id": 6,
+      "category": "Grading",
+      "difficulty": "Advanced",
+      "question": "What is a 'triple excellent' diamond?",
+      "answer": "A triple excellent (3xEX) diamond receives Excellent grades in Cut, Polish, and Symmetry — the three highest ratings in GIA's cut grading system for round brilliant diamonds."
+    },
+    {
+      "id": 7,
+      "category": "Grading",
+      "difficulty": "Intermediate",
+      "question": "What are the five GIA cut grades?",
+      "answer": "GIA's five cut grades for round brilliants are: Excellent, Very Good, Good, Fair, and Poor. The cut grade directly affects how much brilliance and fire a diamond displays."
+    },
+    {
+      "id": 8,
+      "category": "Grading",
+      "difficulty": "Advanced",
+      "question": "What is a 'feather' in diamond clarity terminology?",
+      "answer": "A feather is a small fracture or crack within a diamond. It appears as a white feather-like inclusion and can affect durability if it reaches the surface or is large in size."
+    },
+    {
+      "id": 9,
+      "category": "Grading",
+      "difficulty": "Intermediate",
+      "question": "What does 'SI2' clarity mean?",
+      "answer": "SI2 (Slightly Included 2) means inclusions are noticeable under 10x magnification and may be visible to the naked eye upon careful inspection, depending on their size and position."
+    },
+    {
+      "id": 10,
+      "category": "Grading",
+      "difficulty": "Advanced",
+      "question": "What is fluorescence in diamonds and how is it graded?",
+      "answer": "Fluorescence is a diamond's tendency to emit a soft glow (usually blue) under UV light. GIA grades it on a scale: None, Faint, Medium, Strong, and Very Strong."
+    },
+    {
+      "id": 11,
+      "category": "Grading",
+      "difficulty": "Beginner",
+      "question": "What is a diamond carat?",
+      "answer": "A carat is a unit of weight used for gemstones. One carat equals exactly 200 milligrams (0.2 grams). The term originates from carob seeds once used as counterweights on balance scales."
+    },
+    {
+      "id": 12,
+      "category": "Grading",
+      "difficulty": "Intermediate",
+      "question": "What is the difference between carat and karat?",
+      "answer": "Carat (ct) measures the weight of gemstones where 1 ct = 0.2 grams. Karat (k) measures the purity of gold alloys, where 24k represents pure gold (99.9% pure)."
+    },
+    {
+      "id": 13,
+      "category": "Grading",
+      "difficulty": "Advanced",
+      "question": "What is a 'cloud' inclusion in a diamond?",
+      "answer": "A cloud is a cluster of tiny pinpoint inclusions too small to distinguish individually. It can give a hazy or milky appearance in affected areas and may reduce brilliance if large."
+    },
+    {
+      "id": 14,
+      "category": "Grading",
+      "difficulty": "Advanced",
+      "question": "What is the AGS grading system?",
+      "answer": "The American Gem Society (AGS) uses a 0–10 scale where 0 is the best grade. It is the only major lab that issues a performance-based cut grade for round brilliants based on light performance modeling."
+    },
+    {
+      "id": 15,
+      "category": "Grading",
+      "difficulty": "Intermediate",
+      "question": "What does 'depth percentage' mean in a diamond grading report?",
+      "answer": "Depth percentage is the diamond's height from culet to table divided by the average girdle diameter, expressed as a percentage. The ideal range for round brilliants is 59–62.5%."
+    },
+    {
+      "id": 16,
+      "category": "Grading",
+      "difficulty": "Beginner",
+      "question": "What is a diamond grading report?",
+      "answer": "A diamond grading report (or certificate) is an official document from a gem lab like GIA or AGS that describes a diamond's characteristics including the 4 Cs, measurements, symmetry, and fluorescence."
+    },
+    {
+      "id": 17,
+      "category": "Grading",
+      "difficulty": "Advanced",
+      "question": "What is 'table percentage' in diamond grading?",
+      "answer": "Table percentage is the width of the top flat facet (table) divided by the average girdle diameter. For ideal round brilliants, the optimal range is 53–58% to maximize light return."
+    },
+    {
+      "id": 18,
+      "category": "Grading",
+      "difficulty": "Intermediate",
+      "question": "What is a 'pinpoint' diamond inclusion?",
+      "answer": "A pinpoint is a tiny white or black dot — essentially a minute crystal inclusion — visible under 10x magnification. Many pinpoints grouped together form what graders call a 'cloud' inclusion."
+    },
+    {
+      "id": 19,
+      "category": "Grading",
+      "difficulty": "Advanced",
+      "question": "What is the 'girdle' on a diamond?",
+      "answer": "The girdle is the narrow band or edge of a diamond that separates the crown (top portion) from the pavilion (bottom portion). It can be faceted, polished, or bruted and varies in thickness."
+    },
+    {
+      "id": 20,
+      "category": "Grading",
+      "difficulty": "Intermediate",
+      "question": "What is a 'culet' on a diamond?",
+      "answer": "The culet is the small facet or point at the very bottom tip of a diamond's pavilion. Modern diamonds typically have no culet (pointed), while antique cuts often feature a large open culet facet."
+    },
+    {
+      "id": 21,
+      "category": "History",
+      "difficulty": "Beginner",
+      "question": "Where were diamonds first discovered?",
+      "answer": "Diamonds were first discovered in India around the 4th century BC in the alluvial deposits along the Krishna River delta, making India the world's original and sole diamond source for centuries."
+    },
+    {
+      "id": 22,
+      "category": "History",
+      "difficulty": "Intermediate",
+      "question": "What is the Koh-i-Noor diamond and where is it now?",
+      "answer": "The Koh-i-Noor ('Mountain of Light') is a legendary 105.6-carat diamond from India with a centuries-long history of conquest. It is now part of the British Crown Jewels in the Tower of London."
+    },
+    {
+      "id": 23,
+      "category": "History",
+      "difficulty": "Intermediate",
+      "question": "When were diamonds first discovered in South Africa?",
+      "answer": "Diamonds were first found in South Africa in 1866 near the Orange River when a boy named Erasmus Jacobs found a 21.25-carat diamond later named the Eureka Diamond, triggering a diamond rush."
+    },
+    {
+      "id": 24,
+      "category": "History",
+      "difficulty": "Advanced",
+      "question": "What is the Hope Diamond and what is its alleged curse?",
+      "answer": "The Hope Diamond is a 45.52-carat blue diamond with a legendary curse said to bring misfortune to its owners. It now resides permanently at the Smithsonian National Museum of Natural History in Washington, D.C."
+    },
+    {
+      "id": 25,
+      "category": "History",
+      "difficulty": "Beginner",
+      "question": "What company popularized the slogan 'A Diamond is Forever'?",
+      "answer": "De Beers launched the iconic 'A Diamond is Forever' campaign in 1947, written by copywriter Frances Gerety at N.W. Ayer agency. Ad Age named it the greatest advertising slogan of the 20th century."
+    },
+    {
+      "id": 26,
+      "category": "History",
+      "difficulty": "Advanced",
+      "question": "What is the Cullinan Diamond?",
+      "answer": "The Cullinan is the largest gem-quality rough diamond ever found, discovered in 1905 in South Africa's Premier Mine at 3,106 carats (621g). It was cut into 9 major stones, now part of the British Crown Jewels."
+    },
+    {
+      "id": 27,
+      "category": "History",
+      "difficulty": "Intermediate",
+      "question": "When did Brazil become a major diamond source?",
+      "answer": "Brazil became a major diamond source in the 1720s after deposits were discovered in the Minas Gerais region. Brazil dominated the global diamond supply for over 150 years until South Africa's discovery in 1866."
+    },
+    {
+      "id": 28,
+      "category": "History",
+      "difficulty": "Advanced",
+      "question": "What is the Regent Diamond?",
+      "answer": "The Regent Diamond is a 140.64-carat cushion-cut gem discovered in India around 1698. It adorned Napoleon Bonaparte's ceremonial sword and is now on permanent display in the Louvre Museum in Paris."
+    },
+    {
+      "id": 29,
+      "category": "History",
+      "difficulty": "Beginner",
+      "question": "Who invented the modern round brilliant cut diamond?",
+      "answer": "The modern round brilliant cut was developed by Marcel Tolkowsky in 1919 in his treatise 'Diamond Design,' establishing the ideal mathematical proportions for maximum light performance and beauty."
+    },
+    {
+      "id": 30,
+      "category": "History",
+      "difficulty": "Intermediate",
+      "question": "What was the significance of the 1870 Kimberley diamond rush?",
+      "answer": "The Kimberley diamond rush of 1870 in South Africa transformed the global diamond market and led to Cecil Rhodes forming De Beers Consolidated Mines in 1888, which came to control 90% of world supply."
+    },
+    {
+      "id": 31,
+      "category": "History",
+      "difficulty": "Advanced",
+      "question": "What was the first recorded diamond engagement ring?",
+      "answer": "Archduke Maximilian of Austria gave Mary of Burgundy the first historically recorded diamond engagement ring in 1477, beginning the aristocratic European tradition of diamond betrothal rings."
+    },
+    {
+      "id": 32,
+      "category": "History",
+      "difficulty": "Intermediate",
+      "question": "What is the Pink Star diamond?",
+      "answer": "The Pink Star is a 59.60-carat oval mixed-cut fancy vivid pink diamond, the largest internally flawless fancy vivid pink diamond ever graded by GIA. It sold at Sotheby's Hong Kong for $71.2 million in 2017."
+    },
+    {
+      "id": 33,
+      "category": "History",
+      "difficulty": "Beginner",
+      "question": "Which ancient civilization first valued diamonds?",
+      "answer": "Ancient Indians were the first to value diamonds systematically, using them as religious icons, engraving tools, and protective talismans as far back as the 4th century BC along river delta deposits."
+    },
+    {
+      "id": 34,
+      "category": "History",
+      "difficulty": "Advanced",
+      "question": "What is the Taylor-Burton Diamond?",
+      "answer": "The Taylor-Burton Diamond is a 68-carat pear-shaped diamond bought by Richard Burton for Elizabeth Taylor in 1969 for $1.1 million — then the highest price paid at auction for a jewel at the time."
+    },
+    {
+      "id": 35,
+      "category": "History",
+      "difficulty": "Intermediate",
+      "question": "What is the significance of the Jonker Diamond?",
+      "answer": "The Jonker Diamond, discovered in 1934 in South Africa at 726 carats, was one of the largest gem-quality rough diamonds ever found. Harry Winston purchased it and had it expertly cut into 12 polished gems."
+    },
+    {
+      "id": 36,
+      "category": "Pricing",
+      "difficulty": "Beginner",
+      "question": "What factor most influences diamond price?",
+      "answer": "All 4 Cs influence price, but carat weight typically has the greatest single impact. However, a larger diamond with poor cut, color, or clarity can be worth less than a smaller, higher-quality stone."
+    },
+    {
+      "id": 37,
+      "category": "Pricing",
+      "difficulty": "Intermediate",
+      "question": "What is the Rapaport Price List?",
+      "answer": "The Rapaport Price List (Rap sheet) is a weekly wholesale price guide published since 1978 by Martin Rapaport. It is the globally recognized benchmark pricing reference used by diamond traders worldwide."
+    },
+    {
+      "id": 38,
+      "category": "Pricing",
+      "difficulty": "Advanced",
+      "question": "Why do diamond prices increase exponentially with carat weight?",
+      "answer": "Large rough diamonds are exponentially rarer than smaller ones. A 2-carat diamond can cost 4x more per carat than a 1-carat of similar quality because finding large gem-quality rough stones is statistically very rare."
+    },
+    {
+      "id": 39,
+      "category": "Pricing",
+      "difficulty": "Intermediate",
+      "question": "What are 'magic sizes' in diamond pricing?",
+      "answer": "Magic sizes are weight thresholds (0.50, 0.75, 1.00, 1.50, 2.00 ct) where prices jump significantly. A 0.99-carat diamond is notably cheaper than a 1.00-carat of identical quality due to consumer demand at round numbers."
+    },
+    {
+      "id": 40,
+      "category": "Pricing",
+      "difficulty": "Beginner",
+      "question": "Do diamonds hold their value over time?",
+      "answer": "Diamonds generally retain value but are not strong short-term investments due to retail markups of up to 100%. Rare stones (1ct+ with high grades) tend to appreciate; small commercial-quality diamonds hold less value."
+    },
+    {
+      "id": 41,
+      "category": "Pricing",
+      "difficulty": "Advanced",
+      "question": "What is 'per carat' pricing in the diamond trade?",
+      "answer": "Per carat pricing divides the total diamond price by its carat weight. The diamond trade prices stones per carat to allow fair comparison across different sizes. Total price = per carat price x carat weight."
+    },
+    {
+      "id": 42,
+      "category": "Pricing",
+      "difficulty": "Intermediate",
+      "question": "How does color grade affect diamond price?",
+      "answer": "Moving from D (colorless) down the scale reduces price with each step. The jump from colorless (D-F) to near-colorless (G-J) can reduce price by 20–30%, while appearance difference to the naked eye is minimal."
+    },
+    {
+      "id": 43,
+      "category": "Pricing",
+      "difficulty": "Intermediate",
+      "question": "What are fancy colored diamonds and why are they expensive?",
+      "answer": "Fancy colored diamonds (pink, blue, red, green, orange) are naturally colored diamonds with saturated hue. They are extremely rare — red diamonds are the rarest, with fewer than 30 pure reds known to exist worldwide."
+    },
+    {
+      "id": 44,
+      "category": "Pricing",
+      "difficulty": "Advanced",
+      "question": "What is the most expensive diamond ever sold at auction?",
+      "answer": "The Pink Star (a 59.60-carat vivid pink diamond) sold for $71.2 million at Sotheby's Hong Kong in 2017, setting the world auction record for any gemstone, surpassing the previous record by over $20 million."
+    },
+    {
+      "id": 45,
+      "category": "Pricing",
+      "difficulty": "Beginner",
+      "question": "Are lab-grown diamonds cheaper than natural diamonds?",
+      "answer": "Yes. Lab-grown diamonds typically cost 50–80% less than natural diamonds of the same size and quality. Though chemically identical, their resale value and market price are significantly lower than natural diamonds."
+    },
+    {
+      "id": 46,
+      "category": "Pricing",
+      "difficulty": "Intermediate",
+      "question": "What is the 'certificate premium' for GIA-graded diamonds?",
+      "answer": "GIA-certified diamonds command a 5–15% premium over identical stones certified by lesser-known labs. The GIA's global reputation for consistent, unbiased grading makes their certificates the gold standard of trust."
+    },
+    {
+      "id": 47,
+      "category": "Pricing",
+      "difficulty": "Advanced",
+      "question": "How does clarity affect price between VS and SI grades?",
+      "answer": "Moving from VS1 to SI1 clarity can reduce price by 15–25%. Since both grades are often eye-clean, SI1 offers excellent value. SI2 varies greatly in visibility and must be evaluated individually on each stone."
+    },
+    {
+      "id": 48,
+      "category": "Pricing",
+      "difficulty": "Intermediate",
+      "question": "What is the effect of fluorescence on diamond price?",
+      "answer": "Strong or Very Strong fluorescence can reduce price by 5–15% due to concerns about haziness in some stones. However, in lower color grades (I-M), medium blue fluorescence can actually improve appearance and add value."
+    },
+    {
+      "id": 49,
+      "category": "Pricing",
+      "difficulty": "Beginner",
+      "question": "What is the average cost of a 1-carat diamond engagement ring?",
+      "answer": "A 1-carat diamond of average quality (G color, SI1 clarity, Very Good cut) typically costs $4,000–$6,000. Including a metal setting, the total ring cost averages $5,000–$8,000 in the United States."
+    },
+    {
+      "id": 50,
+      "category": "Pricing",
+      "difficulty": "Advanced",
+      "question": "How is diamond price affected by cut quality?",
+      "answer": "An Excellent cut commands a 10–20% premium over Good cut for the same color and clarity grade. Superior cut releases more brilliance and fire, making the diamond appear larger, brighter, and more desirable."
+    },
+    {
+      "id": 51,
+      "category": "Mining",
+      "difficulty": "Beginner",
+      "question": "In what type of rock are diamonds primarily found?",
+      "answer": "Diamonds are primarily found in kimberlite pipes — vertical columns of igneous rock named after Kimberley, South Africa. They can also be found in alluvial deposits (river beds and beaches) after erosion."
+    },
+    {
+      "id": 52,
+      "category": "Mining",
+      "difficulty": "Intermediate",
+      "question": "What are the top diamond-producing countries?",
+      "answer": "Top diamond-producing countries by volume are Russia (ALROSA), Botswana (Debswana), Canada, Australia, and the Democratic Republic of Congo. By value, Russia and Botswana consistently lead global production."
+    },
+    {
+      "id": 53,
+      "category": "Mining",
+      "difficulty": "Advanced",
+      "question": "How deep underground do diamonds form?",
+      "answer": "Diamonds form 150–200 kilometers below Earth's surface in the mantle under extreme conditions: temperatures of 900–1,300°C and pressure of 45–60 kilobars. Volcanic eruptions then carry them to the surface in kimberlite pipes."
+    },
+    {
+      "id": 54,
+      "category": "Mining",
+      "difficulty": "Intermediate",
+      "question": "What percentage of mined diamonds are gem quality?",
+      "answer": "Only about 20% of mined diamonds are of gem quality. The remaining 80% are industrial-grade stones used for cutting, drilling, grinding, and polishing tools due to hardness but unsuitable color or clarity."
+    },
+    {
+      "id": 55,
+      "category": "Mining",
+      "difficulty": "Beginner",
+      "question": "What is a kimberlite pipe?",
+      "answer": "A kimberlite pipe is a geological formation — a cone-shaped or carrot-shaped intrusion of igneous rock — that formed from ancient volcanic eruptions, acting as a natural conduit bringing diamonds from the mantle to Earth's surface."
+    },
+    {
+      "id": 56,
+      "category": "Mining",
+      "difficulty": "Advanced",
+      "question": "What is alluvial diamond mining?",
+      "answer": "Alluvial mining extracts diamonds from riverbeds, beaches, and ocean floors where erosion has transported them from primary kimberlite sources over millions of years. It uses water, sieves, gravel processing, and X-ray sorting."
+    },
+    {
+      "id": 57,
+      "category": "Mining",
+      "difficulty": "Intermediate",
+      "question": "What is the Jwaneng mine and why is it significant?",
+      "answer": "Jwaneng mine in Botswana is the world's richest diamond mine by value, producing over 10 million carats annually of high-quality gems. It is operated by Debswana, a 50/50 joint venture between De Beers and the Botswana government."
+    },
+    {
+      "id": 58,
+      "category": "Mining",
+      "difficulty": "Advanced",
+      "question": "What is a 'blood diamond' or 'conflict diamond'?",
+      "answer": "Conflict diamonds are mined in war zones and sold to finance armed conflict against governments. The Kimberley Process Certification Scheme was established in 2003 to prevent conflict diamonds from entering the legitimate market."
+    },
+    {
+      "id": 59,
+      "category": "Mining",
+      "difficulty": "Intermediate",
+      "question": "How long does it take for a diamond to form naturally?",
+      "answer": "Natural diamonds take between 1 billion and 3.3 billion years to form in the Earth's mantle — meaning some diamonds are nearly as old as the Earth itself. They are brought to the surface by kimberlitic volcanic events."
+    },
+    {
+      "id": 60,
+      "category": "Mining",
+      "difficulty": "Beginner",
+      "question": "What is the Kimberley Process?",
+      "answer": "The Kimberley Process (KP) is an international certification scheme launched in 2003. It requires all participating nations to certify that exported rough diamonds are conflict-free and not used to fund rebel movements."
+    },
+    {
+      "id": 61,
+      "category": "Mining",
+      "difficulty": "Advanced",
+      "question": "What was the Argyle mine known for?",
+      "answer": "The Argyle mine in Western Australia was the world's largest diamond mine by volume and the sole commercial source of rare pink and red diamonds. It closed in November 2020, dramatically increasing the value of Argyle pink diamonds."
+    },
+    {
+      "id": 62,
+      "category": "Mining",
+      "difficulty": "Intermediate",
+      "question": "What is ALROSA?",
+      "answer": "ALROSA is a Russian state-majority-owned diamond mining company and the world's largest producer of rough diamonds by volume, accounting for approximately 25–30% of global annual supply from Siberian mines."
+    },
+    {
+      "id": 63,
+      "category": "Mining",
+      "difficulty": "Advanced",
+      "question": "What are 'pipe diamonds' versus 'alluvial diamonds'?",
+      "answer": "Pipe diamonds are mined directly from kimberlite pipes and tend to be larger and more angular. Alluvial diamonds have been transported by water over millennia, making them naturally smoother, more rounded, but sometimes smaller."
+    },
+    {
+      "id": 64,
+      "category": "Mining",
+      "difficulty": "Beginner",
+      "question": "What country produces the most diamonds in Africa?",
+      "answer": "Botswana is Africa's largest diamond producer by value. Its Orapa and Jwaneng mines are world-class, and diamonds account for approximately 70–80% of Botswana's total export revenue, funding the nation's development."
+    },
+    {
+      "id": 65,
+      "category": "Mining",
+      "difficulty": "Intermediate",
+      "question": "How are diamonds sorted and valued after mining?",
+      "answer": "After mining, rough diamonds are sorted into thousands of categories by weight, shape, color, and clarity. De Beers' Diamond Trading Company (DTC) holds periodic 'sights' where vetted buyers called sightholders purchase curated boxes of rough."
+    },
+    {
+      "id": 66,
+      "category": "Jewelry",
+      "difficulty": "Beginner",
+      "question": "What are the most popular diamond shapes for engagement rings?",
+      "answer": "The most popular diamond shapes are: Round Brilliant (most popular, ~50% of sales), Princess (square), Cushion, Oval, and Emerald. Round brilliants produce the most brilliance due to their 58-facet design."
+    },
+    {
+      "id": 67,
+      "category": "Jewelry",
+      "difficulty": "Intermediate",
+      "question": "What is a 'solitaire' engagement ring?",
+      "answer": "A solitaire engagement ring features a single diamond as the centerpiece set on a plain metal band without side stones. It is the most classic, timeless, and popular engagement ring style worldwide."
+    },
+    {
+      "id": 68,
+      "category": "Jewelry",
+      "difficulty": "Intermediate",
+      "question": "What is a 'pavé' diamond setting?",
+      "answer": "Pavé (from French 'paved') is a setting style where small diamonds are set closely together in the metal band, held by tiny prongs or beads, creating a surface appearance that looks paved with diamonds and maximizes sparkle."
+    },
+    {
+      "id": 69,
+      "category": "Jewelry",
+      "difficulty": "Beginner",
+      "question": "What metals are most commonly used in diamond jewelry?",
+      "answer": "The most common metals are platinum (most durable, hypoallergenic, naturally white), white gold (18k or 14k rhodium-plated), yellow gold (classic, timeless), and rose gold (romantic, contemporary look)."
+    },
+    {
+      "id": 70,
+      "category": "Jewelry",
+      "difficulty": "Advanced",
+      "question": "What is a 'bezel' setting?",
+      "answer": "A bezel setting encircles a diamond's entire girdle with a custom metal rim, holding it securely flush to the band. It offers the most protection but can make the diamond appear slightly smaller and limits light entry from the sides."
+    },
+    {
+      "id": 71,
+      "category": "Jewelry",
+      "difficulty": "Intermediate",
+      "question": "What is a 'halo' engagement ring?",
+      "answer": "A halo ring features a center diamond surrounded by a 'halo' of smaller pavé-set diamonds, making the center stone appear visually larger and adding brilliance. It became enormously popular after Princess Diana's sapphire ring."
+    },
+    {
+      "id": 72,
+      "category": "Jewelry",
+      "difficulty": "Beginner",
+      "question": "What is a 'tennis bracelet'?",
+      "answer": "A tennis bracelet is a flexible bracelet featuring a continuous line of identically sized and set diamonds. The term became popular after tennis star Chris Evert's diamond bracelet fell off during the 1987 US Open, pausing the match."
+    },
+    {
+      "id": 73,
+      "category": "Jewelry",
+      "difficulty": "Advanced",
+      "question": "What is a 'cathedral' engagement ring setting?",
+      "answer": "In a cathedral setting, arching metal supports (resembling a cathedral's flying buttresses) rise up from both sides of the shank to hold the diamond elevated above the band, creating a dramatic, architectural profile."
+    },
+    {
+      "id": 74,
+      "category": "Jewelry",
+      "difficulty": "Intermediate",
+      "question": "What is the difference between 14k and 18k gold for diamond settings?",
+      "answer": "14k gold is 58.3% pure (more durable and affordable, slightly less yellow). 18k gold is 75% pure (more luxurious appearance, brighter color, slightly softer). Both are excellent choices for diamond engagement rings."
+    },
+    {
+      "id": 75,
+      "category": "Jewelry",
+      "difficulty": "Advanced",
+      "question": "What is a 'channel' setting?",
+      "answer": "A channel setting places diamonds in a continuous row between two parallel metal walls (the channel), with no metal prongs between individual stones. It protects the diamonds and creates a smooth, modern, flush surface appearance."
+    },
+    {
+      "id": 76,
+      "category": "Jewelry",
+      "difficulty": "Beginner",
+      "question": "What is a diamond eternity band?",
+      "answer": "An eternity band is a ring with diamonds set all the way around the full circumference of the band, symbolizing eternal and unending love. It is typically given as an anniversary gift, particularly for milestone anniversaries."
+    },
+    {
+      "id": 77,
+      "category": "Jewelry",
+      "difficulty": "Intermediate",
+      "question": "What are the most popular diamond cuts besides round brilliant?",
+      "answer": "Popular fancy diamond shapes include: Princess (square), Cushion (rounded square), Oval, Emerald (rectangular step-cut), Pear (teardrop), Marquise (boat-shaped), Radiant, Asscher, Heart, and Trillion (triangular)."
+    },
+    {
+      "id": 78,
+      "category": "Jewelry",
+      "difficulty": "Advanced",
+      "question": "What is a 'toi et moi' ring?",
+      "answer": "A 'toi et moi' (French for 'you and me') ring features two gemstones side by side in one setting, symbolizing two souls united. Napoleon gave Joséphine the most famous toi et moi ring — a diamond and sapphire — in 1796."
+    },
+    {
+      "id": 79,
+      "category": "Jewelry",
+      "difficulty": "Beginner",
+      "question": "What is a prong setting?",
+      "answer": "A prong setting uses metal claws (typically 4 or 6) to hold a diamond in place on a ring. It is the most popular diamond setting because it maximizes light exposure to all facets of the stone, enhancing brilliance and fire."
+    },
+    {
+      "id": 80,
+      "category": "Jewelry",
+      "difficulty": "Intermediate",
+      "question": "What is a 'three-stone' or 'trilogy' diamond ring?",
+      "answer": "A three-stone ring features a center diamond flanked by two matching side diamonds. It symbolizes the past, present, and future of a relationship and is a classic style for both engagement rings and anniversary gifts."
+    },
+    {
+      "id": 81,
+      "category": "Science",
+      "difficulty": "Beginner",
+      "question": "What is the chemical composition of a diamond?",
+      "answer": "Diamond is composed entirely of carbon (C) atoms arranged in a tetrahedral crystal lattice called the diamond cubic structure, where each carbon atom is covalently bonded to exactly four neighboring carbon atoms."
+    },
+    {
+      "id": 82,
+      "category": "Science",
+      "difficulty": "Intermediate",
+      "question": "What makes diamonds the hardest natural material?",
+      "answer": "Diamond rates 10 on the Mohs scale — the maximum. Its extreme hardness comes from the uniform tetrahedral arrangement of carbon atoms with the strongest known covalent bonds, resisting deformation in all directions equally."
+    },
+    {
+      "id": 83,
+      "category": "Science",
+      "difficulty": "Advanced",
+      "question": "What are 'Type I' and 'Type II' diamonds?",
+      "answer": "Type I diamonds contain nitrogen impurities (comprising ~98% of all natural diamonds). Type II diamonds have little to no nitrogen — Type IIa are the purest and most transparent; Type IIb contain boron, making them semiconductive and blue."
+    },
+    {
+      "id": 84,
+      "category": "Science",
+      "difficulty": "Intermediate",
+      "question": "What is the refractive index of diamond?",
+      "answer": "Diamond has a refractive index of 2.417, one of the highest of any natural material. This high RI causes light rays to bend dramatically when entering the stone at the facet boundaries, contributing to its extraordinary brilliance."
+    },
+    {
+      "id": 85,
+      "category": "Science",
+      "difficulty": "Advanced",
+      "question": "What is 'fire' in a diamond?",
+      "answer": "Fire is the dispersion of white light into spectral colors (the rainbow effect seen in facet flashes). Diamond has a dispersion of 0.044, which separates white light into its component wavelengths as it exits through crown facets."
+    },
+    {
+      "id": 86,
+      "category": "Science",
+      "difficulty": "Beginner",
+      "question": "Can diamonds burn?",
+      "answer": "Yes. Diamonds are composed of carbon and will combust at approximately 700°C (1,292°F) in an oxygen-rich environment, turning to carbon dioxide gas. Direct flames from jewelers' torches can damage or destroy diamonds."
+    },
+    {
+      "id": 87,
+      "category": "Science",
+      "difficulty": "Intermediate",
+      "question": "What is 'scintillation' in a diamond?",
+      "answer": "Scintillation refers to the sparkling flashes of light seen when a diamond or light source moves. Together with brilliance (overall white light return) and fire (color dispersion), scintillation forms the three components of diamond sparkle."
+    },
+    {
+      "id": 88,
+      "category": "Science",
+      "difficulty": "Advanced",
+      "question": "How do lab-grown diamonds differ from natural diamonds at the atomic level?",
+      "answer": "Lab-grown and natural diamonds are physically, chemically, and optically identical at the atomic level. Only advanced spectroscopy instruments can detect subtle differences in growth patterns (HPHT vs CVD vs natural) in the carbon lattice."
+    },
+    {
+      "id": 89,
+      "category": "Science",
+      "difficulty": "Intermediate",
+      "question": "What are CVD and HPHT methods of growing diamonds?",
+      "answer": "CVD (Chemical Vapor Deposition) grows diamonds from a carbon-rich gas plasma at low pressure on a seed crystal. HPHT (High Pressure High Temperature) replicates mantle conditions at ~5–6 GPa pressure and ~1,400°C temperature."
+    },
+    {
+      "id": 90,
+      "category": "Science",
+      "difficulty": "Advanced",
+      "question": "What is the significance of nitrogen in diamond coloration?",
+      "answer": "Nitrogen substituting for carbon atoms causes most diamond coloration. Aggregated nitrogen (Type Ia) causes yellow/brown tints. Single nitrogen atoms scatter blue light creating yellow color. Boron substitutions (not nitrogen) create blue diamonds."
+    },
+    {
+      "id": 91,
+      "category": "Care",
+      "difficulty": "Beginner",
+      "question": "How should you clean a diamond ring at home?",
+      "answer": "Mix warm water with a few drops of mild dish soap. Soak the ring for 20–30 minutes, gently scrub with a soft toothbrush (especially under the stone), rinse thoroughly under warm running water, and pat dry with a lint-free cloth."
+    },
+    {
+      "id": 92,
+      "category": "Care",
+      "difficulty": "Intermediate",
+      "question": "Can diamonds scratch other diamonds?",
+      "answer": "Yes. Since diamond is the hardest natural material (Mohs 10), only another diamond can scratch it. Store diamond jewelry separately in individual soft pouches or compartmented boxes to prevent diamonds from scratching each other."
+    },
+    {
+      "id": 93,
+      "category": "Care",
+      "difficulty": "Beginner",
+      "question": "What chemicals should you avoid exposing diamonds to?",
+      "answer": "Avoid chlorine bleach, acetone, hairspray, perfume, lotions, and abrasive cleaners. These substances can damage the metal settings, loosen prongs, and leave residue that clouds the diamond's surface and reduces brilliance."
+    },
+    {
+      "id": 94,
+      "category": "Care",
+      "difficulty": "Intermediate",
+      "question": "How often should diamond jewelry be professionally cleaned?",
+      "answer": "Diamond jewelry should be professionally cleaned and inspected every 6–12 months. A jeweler will check for loose prongs, wear on settings, and use ultrasonic or steam cleaning equipment for a thorough deep cleaning."
+    },
+    {
+      "id": 95,
+      "category": "Care",
+      "difficulty": "Advanced",
+      "question": "What is an ultrasonic cleaner and is it safe for all diamonds?",
+      "answer": "Ultrasonic cleaners use high-frequency sound vibrations in liquid to remove dirt and oils. Safe for most diamonds, they are NOT recommended for heavily included, fracture-filled, treated, or laser-drilled stones as vibrations can worsen existing fractures."
+    },
+    {
+      "id": 96,
+      "category": "Care",
+      "difficulty": "Beginner",
+      "question": "Should you remove your diamond ring when exercising?",
+      "answer": "Yes. Remove diamond rings during exercise, especially weight training, rock climbing, or contact sports. Impact can chip diamond corners (especially princess and marquise cuts with pointed corners) or bend and distort the metal setting."
+    },
+    {
+      "id": 97,
+      "category": "Care",
+      "difficulty": "Intermediate",
+      "question": "How should you store diamond jewelry properly?",
+      "answer": "Store each diamond piece separately in soft fabric-lined compartments, individual pouches, or the original box. Never store multiple pieces together — diamonds will scratch softer gemstones and metals, causing irreversible damage."
+    },
+    {
+      "id": 98,
+      "category": "Care",
+      "difficulty": "Advanced",
+      "question": "What is 'diamond dipping' or rhodium replating?",
+      "answer": "White gold rings are plated with rhodium for extra brightness and a crisp white color. This coating wears off over 6–24 months with daily wear. 'Dipping' or replating applies a fresh rhodium electroplating layer to restore the original finish."
+    },
+    {
+      "id": 99,
+      "category": "Care",
+      "difficulty": "Intermediate",
+      "question": "Can hand sanitizer damage a diamond ring?",
+      "answer": "Frequent hand sanitizer use won't damage the diamond itself, but repeated alcohol and chemical exposure can dull the metal finish, accelerate rhodium wear on white gold, and may weaken prong settings over extended time."
+    },
+    {
+      "id": 100,
+      "category": "Care",
+      "difficulty": "Beginner",
+      "question": "Why does a diamond look cloudy or dull sometimes?",
+      "answer": "Cloudiness in a worn diamond is typically caused by buildup of oils, soap residue, lotions, and skin oils on the surface and under the setting. Regular cleaning immediately restores brilliant sparkle. Persistent internal haze indicates strong fluorescence or cloud inclusions."
+    }
+  ]
+}
